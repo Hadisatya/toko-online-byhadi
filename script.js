@@ -73,7 +73,7 @@ function loadData() {
         product: "Black Elegant Trousers",
         rating: 5,
         comment: "Material premium, jatuhnya bagus. Bakal beli lagi untuk warna lain! ❤️",
-        date: "2026-05-20"
+        date: "2022-12-19"
       }
     ];
   }
