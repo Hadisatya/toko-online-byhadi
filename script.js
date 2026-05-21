@@ -53,7 +53,7 @@ function loadData() {
     testimonials = [
       {
         id: 1,
-        name: "Sarah Wijaya",
+        name: "Raka Wijaya",
         product: "Celana Kulot High Waist Cream",
         rating: 5,
         comment: "Bahannya super nyaman! Ukuran sesuai chart, cocok untuk daily wear. Recommend banget! ✨",
@@ -61,7 +61,7 @@ function loadData() {
       },
       {
         id: 2,
-        name: "Amira Putri",
+        name: "Arbiyan Pratama",
         product: "Soft Beige Office Pants",
         rating: 4,
         comment: "Warnanya cantik dan elegan. Cocok dipakai ke kantor. Pengiriman cepat!",
@@ -69,7 +69,7 @@ function loadData() {
       },
       {
         id: 3,
-        name: "Dinda Kurnia",
+        name: "Galang Ramadhan",
         product: "Black Elegant Trousers",
         rating: 5,
         comment: "Material premium, jatuhnya bagus. Bakal beli lagi untuk warna lain! ❤️",
