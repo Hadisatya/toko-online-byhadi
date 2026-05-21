@@ -1,9 +1,9 @@
 // Data Produk (pink themed items)
   const products = [
-    { id: 1, name: "Pink Silk Dress", price: 259000, image: src="img/foto1.jpeg" , category: "dress" },
-    { id: 2, name: "Mawar Tas Tangan", price: 189000, image: src="img/foto2.jpeg", category: "bag" },
-    { id: 3, name: "Lipstik Glow Pink", price: 89000, image: src="img/foto3.jpeg", category: "makeup" },
-    { id: 4, name: "Sepatu Floral", price: 329000, image: src="img/foto4.jpeg", category: "shoes" },
+    { id: 1, name: "Celana Kulot High Waist Cream Pleated", price: 259000, image: src="img/foto1.jpeg" , category: "dress" },
+    { id: 2, name: "Soft Beige Office Wide Pants", price: 589000, image: src="img/foto2.jpeg", category: "bag" },
+    { id: 3, name: "Black Elegant Loose Trousers", price: 89000, image: src="img/foto3.jpeg", category: "makeup" },
+    { id: 4, name: "Korean Style Formal Wide Leg Pants", price: 329000, image: src="img/foto4.jpeg", category: "shoes" },
   ];
 
   // Keranjang: array of { id, name, price, image, quantity }
