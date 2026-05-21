@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>PinkBliss - Toko Online Cantik</title>
-  <!-- Font Awesome 6 (gratis) -->
+  <title>Aervy by hadisatya - Toko Online Exclusive</title>
+  <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- Google Font: Poppins (modern & elegan) -->
+  <!-- Google Font: Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -15,62 +15,145 @@
 <header>
   <div class="container">
     <div class="navbar">
-      <div class="logo">
-        <i class="fas fa-heart" ></i> Aervy
-      </div>
+      <div class="logo"><i class="fas fa-heart"></i> Aervy</div>
       <div class="nav-links">
-        <a href="#" class="active">Beranda</a>
-        <a href="#produk">Produk</a>
-        <a href="#">Tentang</a>
+        <a class="active" id="homeLink">Beranda</a>
+        <a id="produkLink">Produk</a>
+        <a id="ulasanLink">Ulasan</a>
+        <button class="dark-toggle" id="darkModeToggle"><i class="fas fa-moon"></i></button>
+        <div class="wishlist-icon" id="wishlistIcon">
+          <i class="far fa-heart"></i>
+          <span class="badge-count" id="wishlistCount">0</span>
+        </div>
         <div class="cart-icon" id="cartIcon">
           <i class="fas fa-shopping-bag"></i>
-          <span class="cart-count" id="cartCount">0</span>
+          <span class="badge-count" id="cartCount">0</span>
         </div>
       </div>
     </div>
   </div>
 </header>
 
+<!-- Hero Section -->
 <section class="hero">
   <div class="container hero-content">
     <div class="hero-text">
       <h1>Fits Better, <br> Feels Lighter</h1>
-      <p>Koleksi eksklusif fashion & aksesoris dengan nuansa feminin terbaru. Rasakan kenyamanan dan keanggunan setiap hari.</p>
+      <p>Koleksi eksklusif fashion & aksesoris dengan nuansa feminin terbaru. <br>Rasakan kenyamanan dan keanggunan setiap hari.</p>
       <button class="btn-primary" id="shopNowBtn">Belanja Sekarang <i class="fas fa-arrow-right"></i></button>
     </div>
     <div class="hero-img">
-      <img src="img//fotologo1.png" alt="pink shopping">
+      <img src="img/fotologo1.png" alt="fashion">
     </div>
   </div>
 </section>
 
-<div class="container" id="produk">
-  <div class="section-title">✨ Koleksi Terlaris ✨</div>
+<!-- Main Content -->
+<div class="container">
+  <!-- Flash Sale -->
+  <div class="flash-sale" id="flashSale">
+    <h3>🔥 FLASH SALE - DISKON 20% 🔥</h3>
+    <div class="countdown" id="countdownTimer">23:59:59</div>
+    <div class="flash-grid" id="flashProducts"></div>
+  </div>
+
+  <!-- Produk Section -->
+  <div class="section-title" id="produkSection">✨ Koleksi Premium ✨</div>
   <div class="product-grid" id="productGrid"></div>
 </div>
 
+<!-- Kolom Ulasan / Testimoni Pelanggan (Pengganti Virtual Try-On) -->
+<div class="container testimonial-section" id="ulasanSection">
+  <div class="section-title">
+    <i class="fas fa-comment-dots"></i> Ulasan & Testimoni Pelanggan
+    <span class="section-subtitle">Apa kata mereka tentang Aervy?</span>
+  </div>
+  
+  <!-- Form Tambah Ulasan -->
+  <div class="add-review-form">
+    <h3><i class="fas fa-pen-alt"></i> Tulis Ulasan Anda</h3>
+    <div class="form-group">
+      <input type="text" id="reviewerName" placeholder="Nama Anda" class="review-input">
+      <select id="reviewerProduct" class="review-input">
+        <option value="">Pilih Produk</option>
+        <option value="Celana Kulot High Waist Cream">Celana Kulot High Waist Cream</option>
+        <option value="Soft Beige Office Pants">Soft Beige Office Pants</option>
+        <option value="Black Elegant Trousers">Black Elegant Trousers</option>
+        <option value="Korean Wide Leg Pants">Korean Wide Leg Pants</option>
+      </select>
+      <div class="rating-input">
+        <span>Rating: </span>
+        <div class="review-stars" id="reviewStarsInput">
+          <i class="far fa-star" data-score="1"></i>
+          <i class="far fa-star" data-score="2"></i>
+          <i class="far fa-star" data-score="3"></i>
+          <i class="far fa-star" data-score="4"></i>
+          <i class="far fa-star" data-score="5"></i>
+        </div>
+      </div>
+      <textarea id="reviewComment" rows="3" placeholder="Tulis komentar Anda..." class="review-input"></textarea>
+      <button id="submitUlasanBtn" class="btn-primary">Kirim Ulasan <i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <!-- Daftar Ulasan -->
+  <div class="testimonials-grid" id="testimonialsGrid">
+    <!-- Testimoni akan ditampilkan di sini -->
+  </div>
+</div>
+
+<!-- Footer -->
 <footer>
-  <p><i class="fas fa-crown"></i> Aervy - Temukan Kebahagiaan dalam Gaya <i class="fas fa-heart" style="color:#f05a82;"></i></p>
-  <p style="font-size: 0.8rem; margin-top: 10px;">&copy; 2026 Online Shop </p>
+  <p><i class="fas fa-crown"></i> Aervy - Temukan Kebahagiaan dalam Gaya + Cashback Setiap Belanja! ❤️</p>
+  <p>&copy; 2026 byhadisatya | All Rights Reserved</p>
 </footer>
 
-<!-- Cart Sidebar -->
-<div class="cart-overlay" id="cartOverlay"></div>
-<div class="cart-sidebar" id="cartSidebar">
-  <div class="cart-header">
-    <h3><i class="fas fa-shopping-cart"></i> Keranjang Belanja</h3>
-    <i class="fas fa-times close-cart" id="closeCartBtn"></i>
+<!-- Sidebar Cart -->
+<div class="sidebar-overlay" id="cartOverlay"></div>
+<div class="sidebar" id="cartSidebar">
+  <div class="sidebar-header">
+    <h3>🛍️ Keranjang Belanja</h3>
+    <i class="fas fa-times close-sidebar" id="closeCartBtn"></i>
   </div>
-  <div class="cart-items" id="cartItemsContainer">
-    <!-- dynamic cart items -->
+  <div class="sidebar-items" id="cartItems"></div>
+  <div class="footer-total">
+    <div>Total: <span id="cartTotal">Rp 0</span></div>
+    <button class="checkout-btn" id="checkoutBtn">Checkout + Dapat Poin</button>
   </div>
-  <div class="cart-footer">
-    <div class="cart-total">
-      <span>Total</span>
-      <span id="cartTotalPrice">Rp 0</span>
+</div>
+
+<!-- Sidebar Wishlist -->
+<div class="sidebar-overlay" id="wishlistOverlay"></div>
+<div class="sidebar" id="wishlistSidebar">
+  <div class="sidebar-header">
+    <h3>💖 Wishlist</h3>
+    <i class="fas fa-times close-sidebar" id="closeWishlistBtn"></i>
+  </div>
+  <div class="sidebar-items" id="wishlistItems"></div>
+</div>
+
+<!-- Modal Review Produk -->
+<div class="modal" id="reviewModal">
+  <div class="modal-content">
+    <h3>⭐ Beri Rating & Review Produk</h3>
+    <div class="star-rating" id="starRating">
+      <i class="far fa-star" data-score="1"></i>
+      <i class="far fa-star" data-score="2"></i>
+      <i class="far fa-star" data-score="3"></i>
+      <i class="far fa-star" data-score="4"></i>
+      <i class="far fa-star" data-score="5"></i>
     </div>
-    <button class="checkout-btn" id="checkoutBtn">Checkout <i class="fas fa-credit-card"></i></button>
+    <textarea id="reviewText" rows="3" placeholder="Tulis komentar Anda..."></textarea>
+    <button id="submitReviewBtn" class="btn-primary">Kirim Review</button>
+    <button id="closeModalBtn" class="btn-secondary">Tutup</button>
   </div>
+</div>
+
+<!-- Reward Panel (Floating) -->
+<div class="reward-panel" id="rewardPanel">
+  <i class="fas fa-gem"></i> Poin Anda: 
+  <span id="pointsDisplay" class="reward-points">0</span> 
+  <i class="fas fa-coins"></i>
 </div>
 
 <script src="script.js"></script>
