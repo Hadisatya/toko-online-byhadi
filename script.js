@@ -2,7 +2,7 @@
   const products = [
     { id: 1, name: "Celana Kulot High Waist Cream Pleated", price: 259000, image: src="img/foto1.jpeg" , category: "dress" },
     { id: 2, name: "Soft Beige Office Wide Pants", price: 589000, image: src="img/foto2.jpeg", category: "bag" },
-    { id: 3, name: "Black Elegant Loose Trousers", price: 89000, image: src="img/foto3.jpeg", category: "makeup" },
+    { id: 3, name: "Black Elegant Loose Trousers", price: 389000, image: src="img/foto3.jpeg", category: "makeup" },
     { id: 4, name: "Korean Style Formal Wide Leg Pants", price: 329000, image: src="img/foto4.jpeg", category: "shoes" },
   ];
 
