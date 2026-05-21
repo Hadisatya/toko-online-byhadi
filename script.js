@@ -74,6 +74,30 @@ function loadData() {
         rating: 5,
         comment: "Material premium, jatuhnya bagus. Bakal beli lagi untuk warna lain! ❤️",
         date: "2022-12-19"
+      },
+       {
+        id: 1,
+        name: "Hadi Ganteng",
+        product: "Celana Kulot High Waist Cream",
+        rating: 5,
+        comment: "Bahannya super nyaman! Ukuran sesuai chart, cocok untuk daily wear. Recommend banget! ✨",
+        date: "2026-05-15"
+      },
+      {
+        id: 2,
+        name: "Hadi Ganteng",
+        product: "Soft Beige Office Pants",
+        rating: 4,
+        comment: "Warnanya cantik dan elegan. Cocok dipakai ke kantor. Pengiriman cepat!",
+        date: "2026-05-18"
+      },
+      {
+        id: 3,
+        name: "Hadi Ganteng",
+        product: "Black Elegant Trousers",
+        rating: 5,
+        comment: "Material premium, jatuhnya bagus. Bakal beli lagi untuk warna lain! ❤️",
+        date: "2022-12-19"
       }
     ];
   }
