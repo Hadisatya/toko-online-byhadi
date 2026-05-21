@@ -1,7 +1,7 @@
 // Data produk
 const products = [
   { id: 1, name: "Celana Kulot High Waist Cream", price: 589000, image: src="img/foto2.jpeg", rating: 4.5, reviews: [] },
-  { id: 2, name: "Soft Beige Office Pants", price: .259000, image: src="img/foto1.jpeg", rating: 4.8, reviews: [] },
+  { id: 2, name: "Soft Beige Office Pants", price: 259000, image: src="img/foto1.jpeg", rating: 4.8, reviews: [] },
   { id: 3, name: "Black Elegant Trousers", price: 389000, image: src="img/foto3.jpeg", rating: 4.7, reviews: [] },
   { id: 4, name: "Korean Wide Leg Pants", price: 329000, image: src="img/foto4.jpeg", rating: 4.6, reviews: [] },
 ];
