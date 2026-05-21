@@ -76,15 +76,15 @@ function loadData() {
         date: "2022-12-19"
       },
        {
-        id: 1,
+        id: 4,
         name: "Hadi Ganteng",
         product: "Celana Kulot High Waist Cream",
-        rating: 5,
+        rating: 4,
         comment: "Bahannya super nyaman! Ukuran sesuai chart, cocok untuk daily wear. Recommend banget! ✨",
         date: "2026-05-15"
       },
       {
-        id: 2,
+        id: 5,
         name: "Hadi Ganteng",
         product: "Soft Beige Office Pants",
         rating: 4,
@@ -92,7 +92,7 @@ function loadData() {
         date: "2026-05-18"
       },
       {
-        id: 3,
+        id: 6,
         name: "Hadi Ganteng",
         product: "Black Elegant Trousers",
         rating: 5,
